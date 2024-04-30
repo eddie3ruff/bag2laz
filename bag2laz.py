@@ -104,9 +104,9 @@ def convert_bag_to_laz(bag_file, output_dir):
 
 if __name__ == "__main__":
     # Input directory containing ROS bag files
-    bag_directory = "/path/to/bags/"
+    bag_directory = "path1"
     # Output directory for LAZ files
-    output_dir = "/path/to/converted_bags"
+    output_dir = "path2"
 
     # Iterate over all bag files in the directory
     for bag_file in os.listdir(bag_directory):
