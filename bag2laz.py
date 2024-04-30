@@ -92,7 +92,7 @@ def convert_bag_to_laz(bag_file, output_dir):
         out_laz.y = np.array(y_list)
         out_laz.z = np.array(z_list)
         # Save the LAZ file
-        out_laz.header.offset = [min(out_laz.x), min(out_laz.y), min(out_laz.z)]
+        # out_laz.header.offset = [min(out_laz.x), min(out_laz.y), min(out_laz.z)]
         #out_laz.header.scale = [0.01, 0.01, 0.01]  # Scale the coordinates if necessary
         print("Writing LAZ file...")
         out_laz.write(output_file)
